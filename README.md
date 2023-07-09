@@ -1,7 +1,8 @@
-# New Project
+# Efficax
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
-
+### Description 
+This minimalist app comes with a to-do list and pomodoro timer. Try it and watch your efficiency grow! <br/>
+https://efficax.onrender.com/
 ## Available Scripts
 
 ### npm start
@@ -16,9 +17,3 @@ You will also see any lint errors in the console.
 
 Builds a static copy of your site to the `build/` folder.
 Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
