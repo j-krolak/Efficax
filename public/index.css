@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #101010;
 }
 #list {
   padding: 0;
@@ -7,28 +7,110 @@ body {
 }
 
 #list li {
-  padding: 3px 0;
+  display: flex;
+}
+
+#list li label{
+  width: 90%;
+}
+
+.checkbox {
+  display: none;
+}
+
+.cross {
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  transition: .5s all;
+  pointer-events: none;
+}
+
+.checkbox:checked  + label svg {
+  stroke-dashoffset: 0;
+}
+
+input[type=checkbox]{
+  background-color: #101010;
 }
 
 .todo-list {
   color: white;
-  background-color: rgb(47, 159, 98);
+  background-color: rgb(36, 36, 36);
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 3px;
   text-align: left;
   width: fit-content;
 }
 
-.todo-list:hover {
-  background-color: rgb(67, 179, 118);
-}
-
 .remove-btn {
+  padding: 0 3px;
   border-radius: 10%;
   border:none;
   background: none;
   float: right;
 }
+
 .remove-btn:hover {
   background-color: rgba(255,255,255, 0.4);
+}
+
+#pomodoro {
+  padding: 10px;
+  border-radius:3px;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#timer-label{
+  font-size: 1.4rem;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+#start-timer {
+  margin-top: 10px;
+}
+
+#timer {
+  font-size: 2rem;
+  background-color: rgb(36, 36, 36);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2px 10px;
+}
+#start-timer {
+  background-color: rgb(36, 36, 36) ;
+}
+
+button {
+  background: none;
+  color: white;
+  padding: 6px 13px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(73, 73, 73);
+}
+
+button:hover, #start-timer:hover {
+  background-color: #21928c;
+}
+
+button:active {
+  background-color: rgb(104, 104, 248);
+}
+
+input[type="text"]{
+  padding: 5px 13px;
+  border-radius: 4px;
+  border: 2px solid #484848;
+  background-color: rgba(73, 73, 73);
+  color: white;
+}
+
+input[type=text]:focus {
+  outline: none;
+  border: 2px solid #21928c;
+  background-color: rgba(73, 73, 73);
 }
