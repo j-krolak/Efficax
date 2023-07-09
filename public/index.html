@@ -14,12 +14,20 @@
 
       </ul>
       <form id="new-task-form">
-        <input id="title" type="text" placeholder="Task...">
+        <input id="title" type="text" placeholder="Enter your task...">
         <button type="submit">Create</button>
       </form>
     </div>
-   
+    <div id="pomodoro">
+      <div id="timer-label"></div>
+      <div id="timer"></div>
+      <button id="start-timer">Start</button>
+    </div>
+
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script type="module" src="/dist/todo.js"></script>
+    <script type="module" src="/dist/pomodoro.js"></script>
+
   </body>
 </html>
