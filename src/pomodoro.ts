@@ -75,7 +75,7 @@ setInterval(() => {
 
     if(timer != null)
         timer.innerHTML = secondsToString(pomodoro.time);
-
+	document.title = secondsToString(pomodoro.time);
 
 }, 1000);
 
