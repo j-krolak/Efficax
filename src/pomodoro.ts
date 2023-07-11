@@ -29,6 +29,8 @@ const pomodoro: Pomodoro = {
 
 function startTimer(){
     pomodoro.isPaused = !pomodoro.isPaused;
+    if(startBtn)
+        startBtn.innerHTML = pomodoro.isPaused ? "Start" : "Pause";
 }
 
 function secondsToString(seconds: number): string{
